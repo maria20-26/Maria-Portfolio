@@ -585,3 +585,11 @@ button:hover,.btn:hover{transform:translateY(-2px)}
 @media(max-width:560px){
   #certificates .projects-track{grid-template-columns:1fr!important}
 }
+
+/* Mobile-only portrait adjustment: show the complete photo without changing desktop styling. */
+@media (max-width: 580px) {
+  .portrait {
+    object-fit: contain;
+    object-position: center;
+  }
+}
